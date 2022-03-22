@@ -14,10 +14,7 @@ def greet(databarang):
   *                 Selamat Datang di WARUNG SANCA               *
   ****************************************************************""")
 
-    # for data_promo in databarang:
-    #     if data_promo.promo :
-    #         data.append(data_promo)
-
+   
     if len(databarang)>0:
         print("  *                        PROMO HARI INI                        *") 
         print("  ================================================================") 
