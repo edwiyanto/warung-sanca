@@ -32,13 +32,14 @@ def daftar_promo(databarang,databelanja):
             print("  *             Atau tekan X bila selesai belanja                     *")
             print("  *********************************************************************")
 
-    pilihan = [str(num) for num in range(1,len(databarang)+1)]
-    pilihan.append('x')
+    pilihan = [str(num) for num in range(1,len(databarang)+1)]  # jumlah pilihan akan muncul sesuai dengan jumlah barang yang dipromosikan
+    pilihan.append('x')                                         # ditambahkan pilihan 'x' bila user telah selesai belanja
 
     while True:
-        indexbarang = None
-        jumlahbarang = 0
-        item_belanja = {}
+        indexbarang = None    # variabel untuk menyimpan index barang yang telah dipilih
+        jumlahbarang = 0      # variable untuk menyimpan jumlah barang yang akan dibeli
+        item_belanja = {}     # dictionary kosong untuk menyimpan barang-barang yang telah dibeli
+        
         while menu_promo.lower() not in pilihan:
             menu_promo = input("  Pilih barang no. ? ")
         
@@ -58,7 +59,7 @@ def daftar_promo(databarang,databelanja):
             databelanja.append(item_belanja)
             menu_promo =""
         else:
-            daftar_belanja(databelanja)
+            daftar_belanja(databelanja)               # tampilkan total barang yang telah dibeli
             input("Tekan Enter untuk melanjutkan...")
 
             break
