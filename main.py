@@ -3,7 +3,7 @@ from barang_promo import daftar_promo
 from barang_regular import daftar_regular
 from barang_belanja import daftar_belanja
 
-data_barang = []
+
 data_belanja = []
 
 all_items = [   { "item": "susu", "harga": 50000 }, {"item": "daging", "harga": 20000} , 
@@ -23,8 +23,10 @@ while True:
 
     if menu == "1":
         daftar_promo(promotional_items,data_belanja)
+        data_belanja.clear()
     elif menu == "2":
         daftar_regular(all_items,data_belanja)
+        data_belanja.clear()
     else:
         break
 
