@@ -8,9 +8,6 @@ Deskripsi   :   fungsi ini digunakan untuk menampilkan
 '''
 
 
-from math import floor
-
-
 def greet(databarang):
     print("""
   ****************************************************************
