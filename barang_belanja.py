@@ -29,10 +29,10 @@ def daftar_belanja(databelanjaan):
         for i in range(0,len(databelanjaan)):
             harga = format(databelanjaan[i]['harga'],',d').replace(',','.')
             total = format(databelanjaan[i]['total'],',d').replace(',','.')
-            print(f"    | {i+1:>4} | {databelanjaan[i]['item']:^20} | {harga:>8} | {databelanjaan[i]['jumlah']:>4} | {total:>8}     |")
+            print(f"    | {i+1:>4} |Rp. {databelanjaan[i]['item']:^20} | {harga:>8} | {databelanjaan[i]['jumlah']:>4} | {total:>8}  |")
             total_bayar += databelanjaan[i]['total']
         print(footer_belanjaan)
-        print(f"    |                               Total Bayar     | {format(total_bayar,',d').replace(',','.'):>8}     |")
+        print(f"    |                               Total Bayar     | Rp. {format(total_bayar,',d').replace(',','.'):>8} |")
         print(footer_belanjaan)
         print(footer_belanjaan3)
         print(footer_belanjaan4)
